@@ -2,7 +2,10 @@
 <html lang="pt-br">
 
 <head>
+
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Letícia Barros | Portfólio</title>
 
 <link rel="stylesheet" href="src/style.css">
@@ -19,7 +22,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
 
 <nav>
 
-<h2 class="logo"></h2>
+<h2 class="logo">Letícia</h2>
 
 <ul>
 
@@ -39,12 +42,9 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
 
 <img src="src/assets/image.png" class="foto">
 
-<p>
-</p>
-
 <p class="descricao">
-  Letícia Barros<br>
-  Desenvolvedora Full Stack | Sistemas de Informação 
+Letícia Barros<br>
+Desenvolvedora Full Stack | Sistemas de Informação
 </p>
 
 </section>
@@ -60,7 +60,6 @@ Tenho interesse em desenvolvimento web, APIs e construção de sistemas completo
 
 Busco constantemente aprimorar minhas habilidades através de projetos práticos, explorando tecnologias modernas e boas práticas de desenvolvimento.
 </h3>
-
 
 </section>
 
@@ -81,7 +80,7 @@ Aplicação web desenvolvida para consultar previsões do tempo de forma simples
 </span>
 
 <span class="texto-completo" style="display:none;">
- máxima, temperatura mínima e probabilidade de chuva. O sistema busca automaticamente as coordenadas da cidade e consulta uma API externa de dados meteorológicos para gerar a previsão.
+máxima, temperatura mínima e probabilidade de chuva. O sistema busca automaticamente as coordenadas da cidade e consulta uma API externa de dados meteorológicos para gerar a previsão.
 
 Tecnologias utilizadas: Python, Flask, API Open-Meteo, Requests e HTML.
 </span>
@@ -92,8 +91,9 @@ Tecnologias utilizadas: Python, Flask, API Open-Meteo, Requests e HTML.
 
 <div class="links">
 
-<a href="https://github.com/letici4barr0s/PrevisaoTempo"><i class="fa-brands fa-github"></i></a>
-<!-- <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a> -->
+<a href="https://github.com/letici4barr0s/PrevisaoTempo">
+<i class="fa-brands fa-github"></i>
+</a>
 
 </div>
 
@@ -121,8 +121,9 @@ Tecnologias e conceitos utilizados: Linguagem C, estruturas de dados (filas, pil
 
 <div class="links">
 
-<a href="https://github.com/letici4barr0s/Sistema-Reserva-Consulta"><i class="fa-brands fa-github"></i></a>
-<!-- <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a> -->
+<a href="https://github.com/letici4barr0s/Sistema-Reserva-Consulta">
+<i class="fa-brands fa-github"></i>
+</a>
 
 </div>
 
@@ -142,12 +143,12 @@ Tecnologias e conceitos utilizados: Linguagem C, estruturas de dados (filas, pil
 
 <a href="https://github.com/letici4barr0s">
 <i class="fa-brands fa-github"></i>
-Ver meu GitHub
+GitHub
 </a>
 
 <a href="https://www.linkedin.com/in/let%C3%ADcia-barros-606029384/">
 <i class="fa-brands fa-linkedin"></i>
-Conecte-se no LinkedIn
+LinkedIn
 </a>
 
 </div>
@@ -161,24 +162,32 @@ Baixar meu currículo
 </main>
 
 <script>
+
 document.querySelectorAll(".ver-mais").forEach(botao => {
-  botao.addEventListener("click", function(e) {
-    e.preventDefault();
 
-    const texto = this.previousElementSibling;
+botao.addEventListener("click", function(e) {
 
-    if (texto.style.display === "none") {
-      texto.style.display = "inline";
-      this.textContent = " ver menos";
-    } else {
-      texto.style.display = "none";
-      this.textContent = "...ver mais";
-    }
-  });
+e.preventDefault();
+
+const texto = this.previousElementSibling;
+
+if (texto.style.display === "none") {
+
+texto.style.display = "inline";
+this.textContent = " ver menos";
+
+} else {
+
+texto.style.display = "none";
+this.textContent = "...ver mais";
+
+}
+
 });
-</script>
 
-<script type="module" src="src/main.js"></script>
+});
+
+</script>
 
 </body>
 
