@@ -1,0 +1,195 @@
+body{
+margin:0;
+font-family:Arial, Helvetica, sans-serif;
+background: linear-gradient(135deg, #ff8fc7, #ff4f9a, #d63384);
+color: white;
+}
+
+/* MENU */
+
+.menu{
+position:fixed;
+top:0;
+width:100%;
+background:white;
+box-shadow:0 3px 10px rgba(0,0,0,0.1);
+color:#333;
+}
+
+nav{
+max-width:1000px;
+margin:auto;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px;
+}
+
+.descricao{
+color:#fff0f6;
+font-size:18px;
+font-weight:500;
+line-height:1.5;
+}
+
+
+nav ul{
+display:flex;
+list-style:none;
+gap:20px;
+}
+
+nav a{
+text-decoration:none;
+color:#333;
+font-weight:bold;
+position:relative;
+}
+
+nav a::after{
+content:"";
+width:0;
+height:2px;
+background:#ff4f9a;
+position:absolute;
+bottom:-4px;
+left:0;
+transition:0.3s;
+}
+
+nav a:hover::after{
+width:100%;
+}
+
+/* CONTAINER */
+
+.container{
+max-width:900px;
+margin:auto;
+padding:120px 40px 40px;
+text-align: center;
+}
+
+/* PERFIL */
+
+.perfil{
+text-align:center;
+}
+
+.foto{
+width:160px;
+height:160px;
+border-radius:50%;
+object-fit:cover;
+transition:0.4s;
+}
+
+.foto:hover{
+transform:scale(1.1) rotate(3deg);
+box-shadow:0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* BOTÃO */
+
+.btn-cv{
+display:inline-block;
+margin-top:30px;
+background:white;
+color:#333;
+padding:12px 25px;
+border-radius:25px;
+text-decoration:none;
+font-weight:bold;
+transition:0.3s;
+}
+
+.btn-cv:hover{
+background:#ff4f9a;
+}
+
+/* SEÇÕES */
+
+section{
+margin-top:70px;
+}
+
+h2{
+margin-bottom:15px;
+}
+
+/* PROJETOS */
+
+.cards{
+display:flex;
+flex-wrap:wrap;
+gap:20px;
+justify-content:center;
+}
+
+.card{
+background:white;
+padding:20px;
+border-radius:15px;
+width:250px;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+transition:0.3s;
+color:#333;
+}
+
+.card:hover{
+transform:translateY(-10px);
+box-shadow:0 15px 30px rgba(0,0,0,0.15);
+}
+
+.links{
+margin-top:10px;
+display:flex;
+gap:10px;
+}
+
+.links a{
+font-size:20px;
+color:#333;
+}
+
+/* REDES */
+
+.redes{
+margin-top:20px;
+display:flex;
+justify-content:center;
+gap:25px;
+font-size:20px;
+}
+
+.redes a{
+display:flex;
+align-items:center;
+gap:8px;
+text-decoration:none;
+color:white;
+font-weight:bold;
+transition:0.3s;
+}
+
+.redes a:hover{
+color:#ff4f9a;
+}
+
+@media (max-width:768px){
+
+.cards{
+flex-direction:column;
+align-items:center;
+}
+
+.container{
+padding:120px 20px 20px;
+}
+
+nav{
+flex-direction:column;
+gap:10px;
+}
+
+}
