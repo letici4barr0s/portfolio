@@ -2,7 +2,6 @@
 <html lang="pt-br">
 
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -10,10 +9,8 @@
 
 <link rel="stylesheet" href="src/style.css">
 
-<!-- ícones -->
 <link rel="stylesheet"
 href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
 </head>
 
 <body>
@@ -21,156 +18,150 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
 <main class="container">
 
 <section class="perfil">
-
 <img src="src/assets/image.png" class="foto">
 
 <p class="descricao">
 Letícia Barros<br>
-Desenvolvedora Full Stack | Sistemas de Informação
+Developer 💻 | Information Systems
 </p>
-
 </section>
 
 <section id="sobre" class="sobre">
-
 <h2>Sobre mim</h2>
 
 <h3>
 Olá! Sou Letícia, desenvolvedora Full Stack em formação e graduanda em Sistemas de Informação.
 
-Tenho interesse em desenvolvimento web, APIs e construção de sistemas completos, desde a lógica de backend até a interface do usuário.
+Tenho interesse em desenvolvimento web, APIs e construção de sistemas completos, desde o backend até a interface.
 
-Busco constantemente aprimorar minhas habilidades através de projetos práticos, explorando tecnologias modernas e boas práticas de desenvolvimento.
+Busco constantemente evoluir através de projetos práticos e boas práticas de desenvolvimento.
 </h3>
-
 </section>
 
 <section id="projetos" class="projetos">
-
 <h2>Projetos</h2>
 
 <div class="cards">
 
-<div class="card">
+<!-- PROJETO 1 -->
+ <div class="card">
+<img src="src/assets/previsaoTempo.png" class="img-projeto">
+<p class="legenda">Aplicação web com API</p>
 
 <h3>Previsão do Tempo</h3>
 
 <p class="descricao-projeto">
-
 <span class="resumo">
-Aplicação web desenvolvida para consultar previsões do tempo de forma simples e rápida, permitindo ao usuário informar uma cidade e uma data para obter temperatura
+Aplicação web para consulta de clima por cidade,
 </span>
 
 <span class="texto-completo" style="display:none;">
-máxima, temperatura mínima e probabilidade de chuva. O sistema busca automaticamente as coordenadas da cidade e consulta uma API externa de dados meteorológicos para gerar a previsão.
+utilizando API externa para obter dados meteorológicos.
 
-Tecnologias utilizadas: Python, Flask, API Open-Meteo, Requests e HTML.
+Tecnologias: Python, Flask, API Open-Meteo.
 </span>
 
 <a href="#" class="ver-mais">...ver mais</a>
-
 </p>
 
 <div class="links">
-
-<a href="https://github.com/letici4barr0s/PrevisaoTempo">
-<i class="fa-brands fa-github"></i>
-</a>
-
+<a href="https://github.com/letici4barr0s/PrevisaoTempo.git"><i class="fa-brands fa-github"></i></a>
+</div>
 </div>
 
-</div>
-
+<!-- PROJETO 2 -->
 <div class="card">
+<img src="src/assets/ranking.png" class="img-projeto">
+<p class="legenda">Ranking com destaque para TOP 3</p>
 
-<h3>Sistema de Gerenciamento de Pacientes e Consultas</h3>
+<h3>Ranking de Jogadores</h3>
 
 <p class="descricao-projeto">
-
 <span class="resumo">
-Sistema desenvolvido para gerenciamento de pacientes e consultas médicas em ambiente de terminal, permitindo cadastrar, listar, editar e remover pacientes,
+Sistema que importa CSV e gera ranking com interface gráfica,
 </span>
 
 <span class="texto-completo" style="display:none;">
-além de agendar, editar e cancelar consultas. O projeto também inclui autenticação de usuários, controle de fila de atendimento e restauração de consultas canceladas, com armazenamento de dados em arquivos para manter as informações salvas.
+armazenando dados em SQLite e destacando os 3 melhores jogadores.
 
-Tecnologias e conceitos utilizados: Linguagem C, estruturas de dados (filas, pilhas e vetores), manipulação de arquivos, alocação dinâmica de memória e programação modular.
+Tecnologias: Python, Tkinter, SQLite, CSV.
 </span>
 
 <a href="#" class="ver-mais">...ver mais</a>
-
 </p>
 
 <div class="links">
-
-<a href="https://github.com/letici4barr0s/Sistema-Reserva-Consulta">
-<i class="fa-brands fa-github"></i>
-</a>
-
+<a href="https://github.com/letici4barr0s/Sistema_Hanking.git"><i class="fa-brands fa-github"></i></a>
+</div>
 </div>
 
+<!-- PROJETO 3 -->
+ <div class="card">
+<img src="src/assets/agendaTarefas.png" class="img-projeto">
+<p class="legenda">Sistema desktop com interface gráfica</p>
+
+<h3>Sistema de Tarefas</h3>
+
+<p class="descricao-projeto">
+<span class="resumo">
+Sistema em Python para gerenciamento de tarefas com interface gráfica e banco de dados,
+</span>
+
+<span class="texto-completo" style="display:none;">
+permitindo cadastrar, visualizar, buscar, atualizar e remover tarefas.
+
+Utiliza Tkinter para interface, Treeview para exibição e SQLite para persistência, com arquitetura modular.
+
+Tecnologias: Python, Tkinter, SQLite.
+</span>
+
+<a href="#" class="ver-mais">...ver mais</a>
+</p>
+
+<div class="links">
+<a href="https://github.com/letici4barr0s/AgendaTarefas.git"><i class="fa-brands fa-github"></i></a>
+</div>
 </div>
 
-</div>
 
+</div>
 </section>
 
 <section id="contato" class="contato">
-
 <h2>Contato</h2>
 
 <p>Email: leticiadeoliveirabarros12@gmail.com</p>
 
 <div class="redes">
-
 <a href="https://github.com/letici4barr0s">
-<i class="fa-brands fa-github"></i>
-GitHub
+<i class="fa-brands fa-github"></i> GitHub
 </a>
 
 <a href="https://www.linkedin.com/in/let%C3%ADcia-barros-606029384/">
-<i class="fa-brands fa-linkedin"></i>
-LinkedIn
+<i class="fa-brands fa-linkedin"></i> LinkedIn
 </a>
-
 </div>
-
-<a class="btn-cv" href="src/assets/curriculo.pdf" download>
-Baixar meu currículo
-</a>
-
 </section>
 
 </main>
 
 <script>
-
 document.querySelectorAll(".ver-mais").forEach(botao => {
-
 botao.addEventListener("click", function(e) {
-
 e.preventDefault();
 
 const texto = this.previousElementSibling;
 
 if (texto.style.display === "none") {
-
 texto.style.display = "inline";
 this.textContent = " ver menos";
-
 } else {
-
 texto.style.display = "none";
 this.textContent = "...ver mais";
-
 }
-
 });
-
 });
-
 </script>
 
 </body>
-
 </html>
